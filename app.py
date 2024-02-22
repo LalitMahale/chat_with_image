@@ -24,13 +24,13 @@ def image_data(file):
     else:
         st.error("Upload file")
 
-st.header("MultiLanguage Invoice Extractor")
+st.header("Chat with Picture")
 
-file = st.file_uploader("Upload Invoice",type=["png","jpg","jpeg"])
+file = st.file_uploader("Upload Picture",type=["png","jpg","jpeg"])
 
 input_prompt="""
-You are an expert in understanding invoices. We will upload a a image as invoice
-and you will have to answer any questions based on the uploaded invoice image
+You are an expert in understanding Pictures. We will upload a a image 
+and you will have to answer any questions based on the uploaded image
 """
 
 if file is not None:
