@@ -3,10 +3,9 @@ import os
 import streamlit as st
 import google.generativeai as genai
 from PIL import Image
-# load_dotenv()
+load_dotenv()
 
-# genai.configure(api_key=os.getenv("API_KEY"))
-genai.configure(api_key = "AIzaSyDpKEpTxa9POfZvGu6cRQY4Dz9gjzUzTX4")
+genai.configure(api_key=os.getenv("API_KEY"))
 model = genai.GenerativeModel("gemini-pro-vision")
 
 def response(prompt, query, image):
